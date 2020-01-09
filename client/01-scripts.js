@@ -1,4 +1,4 @@
-//jshint esversion:8
+//jshint esversion:6
 
 function fetchHelloDataFromAPI() {
     fetch("http://localhost:3000/test-controller/helloclient", {

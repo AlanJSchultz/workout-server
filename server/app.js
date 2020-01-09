@@ -38,7 +38,7 @@ app.use(require('./middleware/validate-session'));
 app.use('/api/log', log);
 app.use("/authtest", authTest);
 
-app.listen(3000, function () {
-    console.log("app is listening on port 3000");
+app.listen(4000, function () {
+    console.log("app is listening on port 4000");
 });
 
