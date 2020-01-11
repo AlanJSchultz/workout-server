@@ -41,4 +41,3 @@ app.use("/authtest", authTest);
 app.listen(4000, function () {
     console.log("app is listening on port 4000");
 });
-

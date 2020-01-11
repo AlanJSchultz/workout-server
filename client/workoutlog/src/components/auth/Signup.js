@@ -17,9 +17,11 @@ function Signup(props) {
             headers: new Headers({
                 "Content-Type": "application/json"
             })
-        }).then(
+        })
+          .then(
             (response) => response.json()
-        ).then(user => console.log(user))
+          )
+          .then(user => props.updateToken(user.sessionToken));
         
     };
     
