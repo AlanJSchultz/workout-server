@@ -1,7 +1,9 @@
-//jshint esversion:8
+//jshint esversion:6
 
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import WorkoutCreate from './WorkoutCreate';
+import WorkoutTable from './WorkoutTable';
 
 function WorkoutIndex(props) {
 
@@ -27,10 +29,10 @@ function WorkoutIndex(props) {
         <Container>
                 <Row>
                     <Col md="3">
-                        {/* Create component here */}
+                        <WorkoutCreate fetchWorkouts={fetchWorkouts} token={props.token} />
                     </Col>
                     <Col md="9">
-                        Log a workout to see a table. This will be added later
+                        <WorkoutTable workouts={workouts} fetchWorkouts={fetchWorkouts} token={props.token} />
                     </Col>
                 </Row>
             </Container>
