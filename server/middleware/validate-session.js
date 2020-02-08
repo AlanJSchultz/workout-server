@@ -1,4 +1,4 @@
-//jshint esversion:8
+//jshint esversion:6
 
 var jwt = require('jsonwebtoken');
 var sequelize = require('../db');

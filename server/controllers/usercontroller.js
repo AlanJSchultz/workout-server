@@ -31,7 +31,7 @@ router.post('/', function (req, res) {
                     sessionToken: token
                 });
             },
-            function creareError(err) {
+            function createError(err) {
                 res.send(500, err.message);
             }
         );
@@ -109,5 +109,5 @@ router.post("/signin", function (req, res) {
 
 });
 
-//  postman use url http://localhost:3000/api/user/signin
+//  postman use url http://localhost:4000/api/user/signin
 module.exports = router;
