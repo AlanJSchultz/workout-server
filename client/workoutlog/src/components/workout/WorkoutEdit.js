@@ -10,7 +10,7 @@ const WorkoutEdit = (props) => {
 
     const updateCurrent = (event) => {
         event.preventDefault();
-        fetch(`http://localhost:4000/api/log/${props.workoutToUpdate.id}`, {
+        fetch(`http://localhost:5000/api/log/${props.workoutToUpdate.id}`, {
             method: "PUT",
             headers: new Headers ({
                 'Content-Type': 'application/json',

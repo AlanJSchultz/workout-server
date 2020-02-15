@@ -6,7 +6,7 @@ import { Table, Button } from 'reactstrap';
 const WorkoutTable = (props) => {
 
     const deleteWorkout = (workout) => {
-        fetch(`http://localhost:4000/api/log/${workout.id}`, {
+        fetch(`http://localhost:5000/api/log/${workout.id}`, {
             method: 'DELETE',
             headers: new Headers({
                 'Content-Type': 'application/json',

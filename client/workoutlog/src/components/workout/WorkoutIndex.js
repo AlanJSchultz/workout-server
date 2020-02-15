@@ -26,7 +26,7 @@ function WorkoutIndex(props) {
     };
 
     const fetchWorkouts = () => {
-        fetch('http://localhost:4000/api/log', {
+        fetch('http://localhost:5000/api/log', {
             method: 'GET',
             headers: new Headers({
                 "Content-Type": "application/json",

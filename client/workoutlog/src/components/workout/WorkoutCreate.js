@@ -14,7 +14,7 @@ const WorkoutCreate = (props) => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        fetch('http://localhost:4000/api/log', {
+        fetch('http://localhost:5000/api/log', {
             method:'POST',
             headers: new Headers({
                 'Content-Type': 'application/json',

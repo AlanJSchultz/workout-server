@@ -8,9 +8,9 @@ function Login(props) {
     const [password, setPassword] = useState('');
 
     let handleSubmit = (e) => {
-        e.preventDefault()
+        e.preventDefault();
 
-        fetch('http://localhost:4000/api/user/signin', {
+        fetch('http://localhost:5000/api/user/signin', {
             method: 'POST',
             body: JSON.stringify({user: { username: username, password: password }}),
             headers: new Headers ({

@@ -11,7 +11,7 @@ function Signup(props) {
     let handleSubmit = (event) => {
         event.preventDefault();
 
-        fetch("http://localhost:4000/api/user", {
+        fetch("http://localhost:5000/api/user", {
             method: 'POST',
             body: JSON.stringify({ user: { username: username, password: password } }),
             headers: new Headers({
