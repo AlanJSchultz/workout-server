@@ -50,10 +50,10 @@ const WorkoutTable = (props) => {
                         <th>Definition</th>
                     </tr>
                 </thead>
-            <tbody>
-                {workoutMapper()}
-            </tbody>
-    </Table>
+                <tbody>
+                    {workoutMapper()}
+                </tbody>
+            </Table>
         </>
     )
 }

@@ -17,7 +17,8 @@ const WorkoutEdit = (props) => {
                 'Authorization': props.token
             }),
             body: JSON.stringify({ log: { description: editDesc, definition: editDef, result: editRes } })
-        }).then ( res => { props.fetchWorkouts(); props.updateOff() });
+        }).then ( res => { props.fetchWorkouts(); props.updateOff();
+        });
     };
 
     return (
